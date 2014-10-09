@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Frontend dag 3 opgaver</title>
+</head>
+<body>
+	<h1>Frontend dag 3 opgaver</h1>
+	<p>Da du loadede siden kunne se alerten med text længden</p>
+	<p>Herunder printes texten samt de andre opgaver udføres.</p>
+	<script type="text/javascript">
+	//Print Text Length in alert box: Opgave 1
+	var text = "Dette er en tekst";
+
+	alert (text.length);
+	//Print Text: Opgave 2
+	for (var i = 0; i < text.length; i++) {
+		document.write( text.charAt(i));
+	};
+
+	//Print T'er: Opgave 3
+	var totalTs = text.match(/t/g).length;
+	document.write ("<p>T'ere i teksten " + totalTs + "</p>");
+
+
+	//Print antal T'er i textarea: Opgave 4
+	 function counTs(){
+	 var v = document.getElementById("textInput").value;
+	 var t = v.match(/t/g).length;
+
+	 alert("Der er i alt " + t);
+	}
+	</script>
+
+	<textarea name="tekst" cols="50" rows="10" id="textInput">There are times when you want to know how many chararcters are in a string.</textarea><br>
+	<button onclick="counTs()">test mig</button>
+
+	<h1>Canvas spil, test</h1>
+	<a href="spil.html" target="_blank"><button>Spil spillet her!</button></a>
+
+	<h1>Video og audio, test</h1>
+	<a href="videoaudio.html" target="_blank"><button>Tjek det ud her</button></a>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Video and Audio test</title>
+</head>
+<body>
+<p>Her er en lydfil og en videofil, indsat vha. video og audio tag.</p>
+ <audio controls>
+  <source src="FromAToB.theora" type="audio/ogv">
+  <source src="FromAToB.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio> 
+ <video width="320" height="240" controls>
+  <source src="ienandendelafdanmarkflemming.mp4" type="video/mp4">
+  <source src="ienandendelafdanmarkflemming.theora" type="video/ogv">
+  <source src="ienandendelafdanmarkflemming.webmvp8" type="video/webm">
+Din browser understøtter ikke HTML5 Video tagget.
+</video> 
+
+
+<p>Der er blever testet i følgende browsere:
+<ul>
+	<li>Firefox version 32.0.2. det fungerede upåklageligt</li>
+	<img src="screenfirefox.png">
+	<li>Google Chrome version 37.0.2062.120. det fungerede upåklageligt.</li>
+	<img src="screenchrome.png">
+	<li> Internet Explorer version 11. Fungerer, men man skal give tilladelse før, den kan kører video og audio tagget.</li>
+	<img src="screenie.png">
+</ul>
+Her er den gældende video, indlejret i en iFrame fra youtube.com;
+</p>
+<iframe width="560" height="315" src="//www.youtube.com/embed/AoZAP9Fz2ec" frameborder="1" allowfullscreen></iframe>
+
+</body>
+</html>
